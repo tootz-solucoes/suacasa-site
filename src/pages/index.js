@@ -74,7 +74,7 @@ const HomePage = () => {
             Onde nos encontrar
           </a>
         </Link>
-        <Link href="https://bit.ly/sua-casa-kit-guarana" passHref>
+        <Link href="https://bit.ly/sua-casa-encomendar-kit-guarana" passHref>
           <a
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
