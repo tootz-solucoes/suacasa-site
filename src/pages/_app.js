@@ -9,6 +9,13 @@ config.autoAddCss = false
 
 import '../../styles/globals.css'
 
+import {
+  siteUrl,
+  siteName,
+  siteDescription,
+  siteKeywords
+} from '../../app.config'
+
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-W8Q9GLQ' })
@@ -19,26 +26,17 @@ const MyApp = ({ Component, pageProps }) => {
       <Helmet
         encodeSpecialCharacters={true}
         // titleTemplate="%s | Sua Casa - Café & Guaraná"
-        defaultTitle="Sua Casa - Café & Guaraná"
+        defaultTitle={siteName}
       >
         <html lang="pt-BR" amp />
         <title itemProp="name" lang="pt-BR">
-          Sua Casa - Café & Guaraná
+          {siteName}
         </title>
-        <meta
-          name="description"
-          content="Sua Casa - Café e Guaraná é uma cafeteria localizada em Natal - Rio Grande do Norte"
-        />
-        <meta
-          name="keywords"
-          content="sua casa, café, guaraná, guaraná do amazonas, cafeteria, natal, rio grande do norte, rn, salgado, fitness, doces"
-        />
+        <meta name="description" content={siteDescription} />
+        <meta name="keywords" content={siteKeywords} />
         <meta property="og:type" content="cafe" />
-        <meta
-          property="og:description"
-          content="Um lugar que você ama estar 💜"
-        />
-        <link rel="canonical" href="http://suacasanatal.com.br/" />
+        <meta property="og:description" content={siteDescription} />
+        <link rel="canonical" href={siteUrl} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
