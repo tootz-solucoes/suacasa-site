@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'animate.css';
+
 #__next {
   @apply h-full;
 }
