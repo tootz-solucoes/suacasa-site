@@ -1,16 +1,42 @@
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import {
   faMapLocationDot,
-  faCupStrawSwoosh
-} from '@fortawesome/pro-light-svg-icons'
+  faCupStrawSwoosh,
+  faArrowUpFromSquare
+} from '@fortawesome/pro-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const HomePage = () => {
+  const handleOnClick = () => {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: 'asdasdsad',
+          text: `asdasdsa`,
+          url: document.location.href
+        })
+        .then(() => {
+          console.log('Successfully shared')
+        })
+        .catch(error => {
+          console.error('Something went wrong sharing the blog', error)
+        })
+    }
+  }
+
   return (
-    <div className="h-screen bg-primary flex flex-col items-center justify-center py-6">
-      <div className="h-[120px] w-[120px] mt-auto">
+    <div className="h-screen bg-primary flex flex-col items-center justify-center py-6 relative">
+      <div className="absolute top-5 right-5">
+        <button
+          className="w-10 h-10 flex items-center justify-center text-center border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full"
+          onClick={handleOnClick}
+        >
+          <FontAwesomeIcon icon={faArrowUpFromSquare} className="text-sm" />
+        </button>
+      </div>
+      <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px]  mt-auto">
         <Image
           src="/logo-light.png"
           alt="Sua Casa - Café & Guaraná"
@@ -19,7 +45,7 @@ const HomePage = () => {
         />
       </div>
       <div className="flex-col items-center justify-center py-10 max-w-[320px] w-full">
-        <Link href=" https://www.instagram.com/suacasanatal/" passHref>
+        <Link href="https://www.instagram.com/suacasanatal/" passHref>
           <a
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
