@@ -32,7 +32,7 @@ const HomePage = () => {
           <FontAwesomeIcon icon={faArrowUpFromSquare} className="text-sm" />
         </button>
       </div>
-      <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px]  mt-auto">
+      <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px]  ">
         <Image
           src="/logo-light.png"
           alt="Sua Casa - Café & Guaraná"
@@ -90,7 +90,7 @@ const HomePage = () => {
           </a>
         </Link>
       </div>
-      <span className="text-gray-200 text-sm mt-auto">
+      <span className="absolute text-center bottom-0 left-0 text-gray-200 text-sm mt-auto pb-6 w-full">
         Um lugar que você ama estar 💜
       </span>
     </div>
