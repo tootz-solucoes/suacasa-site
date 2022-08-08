@@ -13,9 +13,9 @@ const HomePage = () => {
     if (navigator.share) {
       navigator
         .share({
-          title: 'Sua Casa - Café Guaraná',
-          text: `Venha conhecer a melhor cafeteria de Natal`,
-          url: document.location.href
+          title: 'Sua Casa - Café & Guaraná',
+          text: 'Venha conhecer a Sua Casa - Café & Guaraná em Natal',
+          url: 'http://suacasanatal.com.br/'
         })
         .then(() => {})
         .catch(error => {})
