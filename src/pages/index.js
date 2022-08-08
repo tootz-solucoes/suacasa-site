@@ -26,7 +26,7 @@ const HomePage = () => {
     <div className="h-screen bg-primary flex flex-col items-center justify-center py-6 relative">
       <div className="absolute top-5 right-5">
         <button
-          className="w-10 h-10 flex items-center justify-center text-center border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full"
+          className="w-10 h-10 flex items-center justify-center text-center border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white"
           onClick={handleOnClick}
         >
           <FontAwesomeIcon icon={faArrowUpFromSquare} className="text-sm" />
