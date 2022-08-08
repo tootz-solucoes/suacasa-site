@@ -1,10 +1,68 @@
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import {
+  faMapLocationDot,
+  faCupStrawSwoosh
+} from '@fortawesome/pro-light-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HomePage = () => {
   return (
-    <>
-      <Image src="/logo-light.png" alt="Sua Casa - Café & Guaraná" />
-    </>
+    <div className="h-screen bg-primary flex flex-col items-center justify-center py-6">
+      <div className="h-[120px] w-[120px] mt-auto">
+        <Image
+          src="/logo-light.png"
+          alt="Sua Casa - Café & Guaraná"
+          width={493}
+          height={408}
+        />
+      </div>
+      <div className="flex-col items-center justify-center py-10 max-w-[320px] w-full">
+        <Link href=" https://www.instagram.com/suacasanatal/" passHref>
+          <a
+            target="_blank"
+            className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
+          >
+            <FontAwesomeIcon icon={faInstagram} className="mr-2" />
+            Instagram
+          </a>
+        </Link>
+        <Link href="https://wa.me/5584981179557/" passHref>
+          <a
+            target="_blank"
+            className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
+            Nosso WhatsApp
+          </a>
+        </Link>
+        <Link href="https://goo.gl/maps/tLuyGZsr2rABVqNF9" passHref>
+          <a
+            target="_blank"
+            className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
+          >
+            <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
+            Onde nos encontrar
+          </a>
+        </Link>
+        <Link
+          href="https://wa.me/5584981179557&text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20meu%20Kit%20Guaran%C3%A1"
+          passHref
+        >
+          <a
+            target="_blank"
+            className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
+          >
+            <FontAwesomeIcon icon={faCupStrawSwoosh} className="mr-2" />
+            Encomende seu Kit Guaraná
+          </a>
+        </Link>
+      </div>
+      <span className="text-gray-200 text-sm mt-auto">
+        Um lugar que você ama estar 💜
+      </span>
+    </div>
   )
 }
 

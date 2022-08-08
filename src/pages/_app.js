@@ -1,4 +1,8 @@
+import { config } from '@fortawesome/fontawesome-svg-core'
 import { Helmet } from 'react-helmet'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 import '../../styles/globals.css'
 
 const MyApp = ({ Component, pageProps }) => {
