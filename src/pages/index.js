@@ -35,13 +35,13 @@ const HomePage = () => {
           <FontAwesomeIcon icon={faArrowUpFromSquare} className="text-sm" />
         </button>
       </div>
-      <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px] animate__animated animate__fadeIn">
+      <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px] ">
         <Image
           src="/logo-light.png"
           alt={siteName}
           width={493}
           height={408}
-          className=""
+          className="animate__animated animate__fadeIn"
         />
       </div>
       <div className="flex-col items-center justify-center py-10 max-w-[320px] w-full">
