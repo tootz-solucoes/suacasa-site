@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html className="h-full">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="antialiased">
+        <body className="antialiased h-full">
           <Main />
           <NextScript />
         </body>
