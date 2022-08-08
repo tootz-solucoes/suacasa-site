@@ -41,7 +41,7 @@ const HomePage = () => {
         />
       </div>
       <div className="flex-col items-center justify-center py-10 max-w-[320px] w-full">
-        <Link href="https://www.instagram.com/suacasanatal/" passHref>
+        <Link href="https://bit.ly/sua-casa-instagram" passHref>
           <a
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
@@ -53,7 +53,7 @@ const HomePage = () => {
             Instagram
           </a>
         </Link>
-        <Link href="https://wa.me/5584981179557/" passHref>
+        <Link href="https://bit.ly/sua-casa-whatsapp" passHref>
           <a
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
@@ -62,7 +62,7 @@ const HomePage = () => {
             Nosso WhatsApp
           </a>
         </Link>
-        <Link href="https://goo.gl/maps/tLuyGZsr2rABVqNF9" passHref>
+        <Link href="https://bit.ly/sua-casa-maps" passHref>
           <a
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
@@ -74,10 +74,7 @@ const HomePage = () => {
             Onde nos encontrar
           </a>
         </Link>
-        <Link
-          href="https://wa.me/5584981179557&text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20meu%20Kit%20Guaran%C3%A1"
-          passHref
-        >
+        <Link href="https://bit.ly/sua-casa-kit-guarana" passHref>
           <a
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
