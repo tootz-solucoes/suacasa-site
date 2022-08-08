@@ -10,7 +10,7 @@ const MyApp = ({ Component, pageProps }) => {
     <>
       <Helmet
         encodeSpecialCharacters={true}
-        titleTemplate="%s | Sua Casa - Café & Guaraná"
+        // titleTemplate="%s | Sua Casa - Café & Guaraná"
         defaultTitle="Sua Casa - Café & Guaraná"
       >
         <html lang="pt-BR" amp />
