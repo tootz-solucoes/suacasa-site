@@ -13,16 +13,12 @@ const HomePage = () => {
     if (navigator.share) {
       navigator
         .share({
-          title: 'asdasdsad',
-          text: `asdasdsa`,
+          title: 'Sua Casa - Café Guaraná',
+          text: `Venha conhecer a melhor cafeteria de Natal`,
           url: document.location.href
         })
-        .then(() => {
-          console.log('Successfully shared')
-        })
-        .catch(error => {
-          console.error('Something went wrong sharing the blog', error)
-        })
+        .then(() => {})
+        .catch(error => {})
     }
   }
 
