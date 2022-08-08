@@ -1,11 +1,19 @@
+import { useEffect } from 'react'
+
 import { config } from '@fortawesome/fontawesome-svg-core'
+import TagManager from 'react-gtm-module'
 import { Helmet } from 'react-helmet'
+
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 import '../../styles/globals.css'
 
 const MyApp = ({ Component, pageProps }) => {
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-W8Q9GLQ' })
+  }, [])
+
   return (
     <>
       <Helmet
