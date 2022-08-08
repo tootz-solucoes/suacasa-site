@@ -46,7 +46,10 @@ const HomePage = () => {
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
           >
-            <FontAwesomeIcon icon={faInstagram} className="mr-2" />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="mr-1 text-lg fa-fw"
+            />
             Instagram
           </a>
         </Link>
@@ -55,7 +58,7 @@ const HomePage = () => {
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
           >
-            <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
+            <FontAwesomeIcon icon={faWhatsapp} className="mr-1 text-lg fa-fw" />
             Nosso WhatsApp
           </a>
         </Link>
@@ -64,7 +67,10 @@ const HomePage = () => {
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
           >
-            <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
+            <FontAwesomeIcon
+              icon={faMapLocationDot}
+              className="mr-1 text-lg fa-fw -mt-[3px]"
+            />
             Onde nos encontrar
           </a>
         </Link>
@@ -76,7 +82,10 @@ const HomePage = () => {
             target="_blank"
             className="flex items-center justify-center text-center py-3 px-4 border border-2 border-primary shadow-sm text-md font-medium rounded-full text-primary bg-white hover:bg-white focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white w-full  mb-6"
           >
-            <FontAwesomeIcon icon={faCupStrawSwoosh} className="mr-2" />
+            <FontAwesomeIcon
+              icon={faCupStrawSwoosh}
+              className="mr-1 text-lg fa-fw -mt-[4px]"
+            />
             Encomende seu Kit Guaraná
           </a>
         </Link>
