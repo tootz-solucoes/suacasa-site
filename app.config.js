@@ -23,36 +23,26 @@ module.exports = {
     {
       href: 'https://bit.ly/sua-casa-instagram',
       name: 'Instagram',
-      Icon: () => (
-        <FontAwesomeIcon icon={faInstagram} className="mr-1 text-lg fa-fw" />
-      )
+      icon: faInstagram,
+      iconClassName: 'mr-1 text-lg fa-fw'
     },
     {
       href: 'https://bit.ly/sua-casa-whatsapp',
       name: 'Nosso WhatsApp',
-      Icon: () => (
-        <FontAwesomeIcon icon={faWhatsapp} className="mr-1 text-lg fa-fw" />
-      )
+      icon: faWhatsapp,
+      iconClassName: 'mr-1 text-lg fa-fw'
     },
     {
       href: 'https://bit.ly/sua-casa-maps',
       name: 'Onde nos encontrar',
-      Icon: () => (
-        <FontAwesomeIcon
-          icon={faMapLocationDot}
-          className="mr-1 text-lg fa-fw -mt-[3px]"
-        />
-      )
+      icon: faMapLocationDot,
+      iconClassName: 'mr-1 text-lg fa-fw -mt-[3px]'
     },
     {
       href: 'https://bit.ly/sua-casa-encomendar-kit-guarana',
       name: 'Encomende seu Kit Guaraná',
-      Icon: () => (
-        <FontAwesomeIcon
-          icon={faCupStrawSwoosh}
-          className="mr-1 text-lg fa-fw -mt-[4px]"
-        />
-      )
+      icon: faCupStrawSwoosh,
+      iconClassName: 'mr-1 text-lg fa-fw -mt-[4px]'
     }
   ]
 }

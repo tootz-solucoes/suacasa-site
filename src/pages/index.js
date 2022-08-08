@@ -45,7 +45,7 @@ const HomePage = () => {
         />
       </div>
       <div className="flex-col items-center justify-center py-10 max-w-[320px] w-full">
-        {socialLinks.map(({ href, name, Icon }, index) => (
+        {socialLinks.map(({ href, name, icon, iconClassName }, index) => (
           <Link key={href} href={href} passHref>
             <a
               target="_blank"
@@ -54,7 +54,7 @@ const HomePage = () => {
                 'animation-delay': '0.3s'
               }}
             >
-              <Icon />
+              <FontAwesomeIcon icon={icon} className={iconClassName} />
               {name}
             </a>
           </Link>
