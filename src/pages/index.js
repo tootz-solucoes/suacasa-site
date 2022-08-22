@@ -43,6 +43,9 @@ const HomePage = () => {
           height={408}
           className="animate__animated animate__fadeIn"
         />
+        <h1 aria-label={siteName} className="text-primary text-center">
+          {siteName}
+        </h1>
       </div>
       <div className="flex-col items-center justify-center py-10 max-w-[320px] w-full">
         {socialLinks.map(({ href, name, icon, iconClassName }, index) => (

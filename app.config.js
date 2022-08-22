@@ -10,7 +10,7 @@ const {
 const { FontAwesomeIcon } = require('@fortawesome/react-fontawesome')
 
 module.exports = {
-  siteUrl: 'http://suacasanatal.com.br/',
+  siteUrl: 'http://www.suacasanatal.com.br/',
   siteName: 'Sua Casa - Café & Guaraná',
   siteNameShort: 'Sua Casa',
   siteDescription:
