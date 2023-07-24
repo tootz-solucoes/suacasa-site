@@ -5,7 +5,8 @@ const {
 const {
   faMapLocationDot,
   faCupStrawSwoosh,
-  faArrowUpFromSquare
+  faArrowUpFromSquare,
+  faMoped
 } = require('@fortawesome/pro-regular-svg-icons')
 const { FontAwesomeIcon } = require('@fortawesome/react-fontawesome')
 
@@ -20,6 +21,12 @@ module.exports = {
   siteSlogan: 'Um lugar que você ama estar 💜',
   shareText: 'Venha conhecer a Sua Casa - Café & Guaraná em Natal',
   socialLinks: [
+    {
+      href: 'https://bit.ly/sua-casa-no-ifood',
+      name: 'Peça pelo iFood',
+      icon: faMoped,
+      iconClassName: 'mr-1 text-lg fa-fw'
+    },
     {
       href: 'https://bit.ly/sua-casa-instagram',
       name: 'Instagram',
